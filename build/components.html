@@ -1,0 +1,131 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-8">
+            <h2>Tab component</h2>
+
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                       aria-controls="pills-home" aria-selected="true">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                       aria-controls="pills-profile" aria-selected="false">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                       aria-controls="pills-contact" aria-selected="false">Contact</a>
+                </li>
+            </ul>
+            <div class="tab-content mt-3" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    Consequat occaecat ullamco amet non eiusmod nostrud dolore irure incididunt est duis anim sunt
+                    officia. Fugiat
+                    velit proident aliquip nisi incididunt nostrud exercitation proident est nisi. Irure magna elit
+                    commodo anim ex
+                    veniam culpa eiusmod id nostrud sit cupidatat in veniam ad. Eiusmod consequat eu adipisicing minim
+                    anim aliquip
+                    cupidatat culpa excepteur quis. Occaecat sit eu exercitation irure Lorem incididunt nostrud.
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    Ad pariatur nostrud pariatur exercitation ipsum ipsum culpa mollit commodo mollit ex. Aute sunt
+                    incididunt amet
+                    commodo est sint nisi deserunt pariatur do. Aliquip ex eiusmod voluptate exercitation cillum id
+                    incididunt elit
+                    sunt. Qui minim sit magna Lorem id et dolore velit Lorem amet exercitation duis deserunt. Anim id
+                    labore elit
+                    adipisicing ut in id occaecat pariatur ut ullamco ea tempor duis.
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure
+                    ex. Nulla ut
+                    duis ipsum nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod minim
+                    exercitation
+                    fugiat irure ex labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip
+                    nostrud. Amet
+                    ex cupidatat excepteur aute veniam incididunt mollit cupidatat esse irure officia elit do ipsum
+                    ullamco Lorem.
+                    Ullamco ut ad minim do mollit labore ipsum laboris ipsum commodo sunt tempor enim incididunt.
+                    Commodo quis sunt
+                    dolore aliquip aute tempor irure magna enim minim reprehenderit. Ullamco consectetur culpa veniam
+                    sint cillum
+                    aliqua incididunt velit ullamco sunt ullamco quis quis commodo voluptate. Mollit nulla nostrud
+                    adipisicing
+                    aliqua cupidatat aliqua pariatur mollit voluptate voluptate consequat non.
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- link that opens popup -->
+    <a class="popup-with-form" href="#test-form">Open form</a>
+
+    <!-- form itself -->
+    <form id="test-form" class="white-popup-block mfp-hide">
+        <h1>Form</h1>
+        <fieldset style="border:0;">
+            <p>Lightbox has an option to automatically focus on the first input. It's strongly recommended to use <code>inline</code> popup type for lightboxes with form instead of <code>ajax</code> (to keep entered data if the user accidentally refreshed the page).</p>
+            <ol>
+                <li>
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Name" required="">
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="example@domain.com" required="">
+                </li>
+                <li>
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" type="tel" placeholder="Eg. +447500000000" required="">
+                </li>
+                <li>
+                    <label for="textarea">Textarea</label><br>
+                    <textarea id="textarea">Try to resize me to see how popup CSS-based resizing works.</textarea>
+                </li>
+            </ol>
+        </fieldset>
+    </form>
+</div>
+
+<div class="container">
+    <!-- Slider main container -->
+    <div class="swiper-container" style="width: 600px; height: 300px;">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+</div>
+
+<script src="js/libs.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

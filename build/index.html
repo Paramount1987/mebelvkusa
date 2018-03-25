@@ -1,0 +1,829 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Вкус Мебели</title>
+    <style>
+        #preloader {
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #dee8ee;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+
+
+    <div id="preloader"></div>
+
+    <div class="page-wrap">
+
+        <header class="header">
+    <div class="container">
+        <div class="header-inner">
+
+            <div class="header-left">
+                <div class="header-left-item">
+                    <a href="/" class="link-logo">
+                        <img src="img/logo.jpg" alt="" class="img-logo">
+                    </a>
+                    <div class="header__logo-descr">Фабрика мягкой мебели</div>
+                </div>
+            </div>
+
+            <div class="header-right">
+                <div class="header-right-item">
+                    <a href="tel:88352600104" class="header__link-phone">
+                        <span class="sp-round">
+                            <img src="img/svg/phone.svg" alt="" class="img-phone">
+                        </span>
+                        8 (8352) 600-104
+                    </a>
+                </div>
+                <div class="header-right-item">
+                    <a href="#popup-form" class="link-btn popup-link">заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="page-intro">
+    <div class="container">
+        <div class="page-intro-inner">
+            <h1 class="page-intro__title js-intro-title">Выбери кровать своей мечты</h1>
+            <p class="page-intro__descr js-intro-descr">Рассказывать айтишникам про психологию то еще дело, некоторые читатели скажут:
+                «Bullshit!»</p>
+
+            <div class="page-intro-bottom">
+                <a href="#popup-form" class="link-btn link-btn--lg popup-link js-intro-btn">Заказать</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <section class="page-section">
+    <div class="container">
+        <h2 class="h2">Выберите</h2>
+
+        <div class="mbl-content js-fade-in">
+            <div class="mbl-content-left">
+                <div class="img-preview-wrap">
+                    <img src="img/gallery/mebel1.jpg" alt="" class="img-responsive js-img-preview">
+                </div>
+                <div class="img-slider-wrap">
+                    <!-- Slider main container -->
+                    <div class="swiper-container img-slider js-img-swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="img/gallery/mebel1.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/gallery/mebel1.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/gallery/mebel1.jpg" alt="" class="img-responsive">
+                            </div>
+                        </div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mbl-content-right">
+                <div class="mbl-title js-title">Матэо</div>
+                <ul class="mbl-gallery nav nav-pills" role="tablist">
+                    <li class="mbl-glr-item nav-item">
+                        <div class="mbl-glr-item-top nav-link active show" id="link-mateo" data-toggle="pill" href="#mateo"
+                             role="tab" aria-selected="true" data-price="19000" data-title="Матэо"
+                             data-imgs="img/gallery/mebel1.jpg,img/gallery/mebel1.jpg,img/gallery/mebel1.jpg"
+                        >
+                            <img src="img/gallery/mebel1.jpg" alt="" class="mbl-glr-item__pic">
+                        </div>
+                        <div class="mbl-glr-item__title">Матэо</div>
+                    </li>
+                    <li class="mbl-glr-item nav-item">
+                        <div class="mbl-glr-item-top nav-link" id="link-prestig" data-toggle="pill" href="#prestig"
+                             role="tab" aria-selected="false" data-price="18000" data-title="Престиж"
+                             data-imgs="img/gallery/mebel2.jpg,img/gallery/mebel4.jpg,img/gallery/mebel5.jpg"
+                        >
+                            <img src="img/gallery/mebel2.jpg" alt="" class="mbl-glr-item__pic">
+                        </div>
+                        <div class="mbl-glr-item__title">Престиж</div>
+                    </li>
+                    <li class="mbl-glr-item nav-item">
+                        <div class="mbl-glr-item-top nav-link" id="link-philadel" data-toggle="pill" href="#philadel"
+                             role="tab" aria-selected="false" data-price="18000" data-title="Филадельфия"
+                             data-imgs="img/gallery/mebel3.jpg,img/gallery/mebel3.jpg,img/gallery/mebel3.jpg"
+                        >
+                            <img src="img/gallery/mebel3.jpg" alt="" class="mbl-glr-item__pic">
+                        </div>
+                        <div class="mbl-glr-item__title">Филадельфия</div>
+                    </li>
+                    <li class="mbl-glr-item">
+                        <div class="mbl-glr-item-top nav-link" id="link-ksenia" data-toggle="pill" href="#ksenia"
+                             role="tab" aria-selected="false" data-price="19000" data-title="Ксения"
+                             data-imgs="img/gallery/mebel4.jpg,img/gallery/mebel4.jpg,img/gallery/mebel4.jpg"
+                        >
+                            <img src="img/gallery/mebel4.jpg" alt="" class="mbl-glr-item__pic">
+                        </div>
+                        <div class="mbl-glr-item__title">Ксения</div>
+                    </li>
+                    <li class="mbl-glr-item">
+                        <div class="mbl-glr-item-top nav-link" id="link-sorento" data-toggle="pill" href="#sorento"
+                             role="tab" aria-selected="false" data-price="22000" data-title="Соренто"
+                             data-imgs="img/gallery/mebel5.jpg,img/gallery/mebel5.jpg,img/gallery/mebel5.jpg"
+                        >
+                            <img src="img/gallery/mebel5.jpg" alt="" class="mbl-glr-item__pic">
+                        </div>
+                        <div class="mbl-glr-item__title">Соренто</div>
+                    </li>
+                    <li class="mbl-glr-item">
+                        <div class="mbl-glr-item-top nav-link" id="link-valensia" data-toggle="pill" href="#valensia"
+                             role="tab" aria-selected="false" data-price="25000" data-title="Валенсия"
+                             data-imgs="img/gallery/mebel6.jpg,img/gallery/mebel6.jpg,img/gallery/mebel6.jpg"
+                        >
+                            <img src="img/gallery/mebel6.jpg" alt="" class="mbl-glr-item__pic">
+                        </div>
+                        <div class="mbl-glr-item__title">Валенсия</div>
+                    </li>
+                    <li class="mbl-glr-item">
+                        <div class="mbl-glr-item-top nav-link" id="link-manheten" data-toggle="pill" href="#manheten"
+                             role="tab" aria-selected="false" data-price="25000" data-title="Манхеттэн"
+                             data-imgs="img/gallery/mebel7.jpg,img/gallery/mebel7.jpg,img/gallery/mebel7.jpg"
+                        >
+                            <img src="img/gallery/mebel7.jpg" alt="" class="mbl-glr-item__pic">
+                        </div>
+                        <div class="mbl-glr-item__title">Манхеттэн</div>
+                    </li>
+                    <li class="mbl-glr-item">
+                        <div class="mbl-glr-item-top nav-link" id="link-chelentano" data-toggle="pill" href="#chelentano"
+                             role="tab" aria-selected="false" data-price="31000" data-title="Челентано"
+                             data-imgs="img/gallery/mebel8.jpg,img/gallery/mebel8.jpg,img/gallery/mebel8.jpg"
+                        >
+                            <img src="img/gallery/mebel8.jpg" alt="" class="mbl-glr-item__pic">
+                        </div>
+                        <div class="mbl-glr-item__title">Челентано</div>
+                    </li>
+                    <li class="mbl-glr-item">
+                        <div class="mbl-glr-item-top nav-link" id="link-silvia" data-toggle="pill" href="#silvia"
+                             role="tab" aria-selected="false" data-price="16000" data-title="Сильвия"
+                             data-imgs="img/gallery/mebel9.jpg,img/gallery/mebel9.jpg,img/gallery/mebel9.jpg"
+                        >
+                            <img src="img/gallery/mebel9.jpg" alt="" class="mbl-glr-item__pic">
+                        </div>
+                        <div class="mbl-glr-item__title">Сильвия</div>
+                    </li>
+                    <li class="mbl-glr-item">
+                        <div class="mbl-glr-item-top nav-link" id="link-vivian" data-toggle="pill" href="#vivian"
+                             role="tab" aria-selected="false" data-price="17000" data-title="Вивиан"
+                             data-imgs="img/gallery/mebel10.jpg,img/gallery/mebel10.jpg,img/gallery/mebel10.jpg"
+                        >
+                            <img src="img/gallery/mebel10.jpg" alt="" class="mbl-glr-item__pic">
+                        </div>
+                        <div class="mbl-glr-item__title">Вивиан</div>
+                    </li>
+                </ul>
+
+                <div class="mbl-descr">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="mateo">
+                            <p>
+                                Эффектная спинка из сегментированных панелей привлекает внимание, блеск и затемнения
+                                создают игру контрастов, формируя неповторимый рельеф.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="prestig">
+                            <p>
+                                Воплощение строгости в стиле модерн. Блеск и затемнения создают игру контрастов,
+                                формируя неповторимый рельеф. Каркас кровати выполнен из березовой фанеры и МДФ.
+                                При необходимости в комплект можно включить подъемный механизм с бельевым ящиком,
+                                который существенно увеличит объем хранения вещей, а так же позволит легко
+                                производить уборку пыли под кроватью.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="philadel">
+                            <p>
+                                Элегантная спинка из сегментированных вертикальных панелей привлекает внимание,
+                                блеск и затемнения создают игру контрастов, формируя неповторимый рельеф. Каркас
+                                кровати выполнен из березовой фанеры и МДФ. При необходимости в комплект можно
+                                включить подъемный механизм с бельевым ящиком, который существенно увеличит объем
+                                хранения вещей, а так же позволит легко производить уборку пыли под кроватью.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="ksenia">
+                            <p>
+                                Элегантная интерьерная кровать с изголовьем, украшенным декоративными пуговицами
+                                и глубокой пиковкой. Обратная сторона изголовья обита основным обивочным материалом.
+                            </p>
+                            <p>
+                                В комплект кровати входит кроватное основание. Каркас кровати выполнен из березовой
+                                фанеры и МДФ. При необходимости в комплект можно включить подъемный механизм с
+                                бельевым ящиком, который существенно увеличит объем хранения вещей, а так же
+                                позволит легко производить уборку пыли под кроватью.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="sorento">
+                            <p>
+                                Элегантная интерьерная кровать с изголовьем, украшенным декоративными гвоздиками.
+                                Обратная сторона изголовья обита спандбондом, но, при желании, её можно
+                                выполнить из основного обивочного материала.
+                            </p>
+                            <p>
+                                В комплект кровати входит кроватное основание. Каркас кровати выполнен из березовой
+                                фанеры и МДФ. При необходимости в комплект можно включить подъемный механизм с
+                                бельевым ящиком, который существенно увеличит объем хранения вещей, а так же
+                                позволит легко производить уборку пыли под кроватью.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="valensia">
+                            <p>
+                                Элегантная интерьерная кровать с изголовьем, украшенным декоративными гвоздиками и
+                                глубокой пиковкой. Обратная сторона изголовья обита спандбондом, но, при
+                                желании, её можно выполнить из основного обивочного материала.
+                            </p>
+                            <p>
+                                В комплект кровати входит кроватное основание. Каркас кровати выполнен из березовой
+                                фанеры и МДФ. При необходимости в комплект можно включить подъемный механизм с
+                                бельевым ящиком, который существенно увеличит объем хранения вещей, а так же
+                                позволит легко производить уборку пыли под кроватью.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="manheten">
+                            <p>
+                                Кровать в современном стиле с боковыми ушками. Изголовье, украшено декоративными
+                                гвоздиками и глубокой пиковкой. Обратная сторона изголовья обита спандбондом, но,
+                                при желании, её можно выполнить из основного обивочного материала.
+                            </p>
+                            <p>
+                                В комплект кровати входит кроватное основание. Каркас кровати выполнен из березовой
+                                фанеры и МДФ. При необходимости в комплект можно включить подъемный механизм с
+                                бельевым ящиком, который существенно увеличит объем хранения вещей, а так же
+                                позволит легко производить уборку пыли под кроватью.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="chelentano">
+                            <p>
+                                "Ушастая" кровать с высоким изголовьем в американском стиле.
+                                Боковые ушки кровати имеют изящный неповторимый изгиб,что придает
+                                модели определенную эстетичность.
+                            </p>
+                            <p>
+                                Изголовье, украшенно глубокой пиковкой. Обратная сторона изголовья обита
+                                спандбондом, но, при желании, её можно выполнить из основного обивочного материала.
+                            </p>
+                            <p>
+                                В комплект кровати входит кроватное основание. Каркас кровати выполнен из
+                                березовой фанеры и МДФ. При необходимости в комплект можно включить подъемный
+                                механизм с бельевым ящиком, который существенно увеличит объем хранения вещей,
+                                а так же позволит легко производить уборку пыли под кроватью.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="silvia">
+                            <p>
+                                Элегантная интерьерная кровать с изголовьем, украшенным декоративными пуговицами и
+                                глубокой пиковкой. Обратная сторона изголовья обита спандбондом, но,
+                                при желании, её можно выполнить из основного обивочного материала.
+                            </p>
+                            <p>
+                                В комплект кровати входит кроватное основание. Каркас кровати выполнен из березовой
+                                фанеры и МДФ. При необходимости в комплект можно включить подъемный механизм
+                                с бельевым ящиком, который существенно увеличит объем хранения вещей,
+                                а так же позволит легко производить уборку пыли под кроватью.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="vivian">
+                            <p>
+                                Элегантная интерьерная кровать с наклоненным изголовьем, украшенным декоративными
+                                пуговицами и глубокой пиковкой. Обратная сторона изголовья обита спандбондом, но,
+                                при желании, её можно выполнить из основного обивочного материала.
+                            </p>
+                            <p>
+                                В комплект кровати входит кроватное основание. Каркас кровати выполнен из березовой
+                                фанеры и МДФ. При необходимости в комплект можно включить подъемный механизм с
+                                бельевым ящиком, который существенно увеличит объем хранения вещей, а так же
+                                позволит легко производить уборку пыли под кроватью.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mbl-group-btn">
+                    <div class="mbl-btn">
+                        <select class="js-select" name="" data-plh="Выбор обивки" data-type="priceFirst">
+                            <option></option>
+                            <option value="0">1 категория</option>
+                            <option value="1000">2 категория</option>
+                            <option value="2000">3 категория</option>
+                            <option value="3000">4 категория</option>
+                        </select>
+                    </div>
+                    <div class="mbl-btn w-2">
+                        <select class="js-select" name="" data-plh="Подъемный механизм" data-type="priceSecond">
+                            <option></option>
+                            <option value="0">Без механизма</option>
+                            <option value="7000">С механизмом</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="mbl-btn w-2 b-red">
+                            <select class="js-select" name="" data-plh="Размер спального места" data-type="priceThird">
+                                <option></option>
+                                <option value="0">140 на 200</option>
+                                <option value="1000">160 на 200</option>
+                                <option value="2000">180 на 200</option>
+                            </select>
+                            <p class="select-descr">Выберите размер</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-wrap">
+                    <div class="price-descr">
+                        <span class="p-title">Цена:</span>
+                        <span class="js-price"></span>
+                        <span>&nbsp;₽</span>
+                    </div>
+                    <a href="#" class="link-btn link-btn--md">Купить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="page-section page-section--plus">
+    <div class="container">
+        <h2 class="h2 h2--lined">Наши преимущества</h2>
+        <div class="list-quadro js-fade-in">
+            <div class="card-slip">
+                <div class="card-slip-inner">
+                    <div class="card-slip-top">
+                        <div class="card-slip__pic">
+                            <img src="img/svg/6.svg" alt="" class="img-svg" width="100" height="70">
+                        </div>
+                    </div>
+                    <div class="card-slip-body">
+                        <p class="card-slip__title">Изготовление нестандартной мебели</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slip">
+                <div class="card-slip-inner">
+                    <div class="card-slip-top">
+                        <div class="card-slip__pic">
+                            <img src="img/svg/7.svg" alt="" class="img-svg" width="110" height="70">
+                        </div>
+                    </div>
+                    <div class="card-slip-body">
+                        <p class="card-slip__title">Собственное производство</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slip">
+                <div class="card-slip-inner">
+                    <div class="card-slip-top">
+                        <div class="card-slip__pic">
+                            <img src="img/svg/8.svg" alt="" class="img-svg" width="100" height="80">
+                        </div>
+                    </div>
+                    <div class="card-slip-body">
+                        <p class="card-slip__title">Доступная мебель, без магазинных наценок</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slip">
+                <div class="card-slip-inner">
+                    <div class="card-slip-top">
+                        <div class="card-slip__pic">
+                            <img src="img/svg/9.svg" alt="" class="img-svg" width="90" height="70">
+                        </div>
+                    </div>
+                    <div class="card-slip-body">
+                        <p class="card-slip__title">Бесплатная доставка по городу Чебоксары и Новочебоксарску</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slip">
+                <div class="card-slip-inner">
+                    <div class="card-slip-top">
+                        <div class="card-slip__pic">
+                            <img src="img/svg/10.svg" alt="" class="img-svg" width="90" height="70">
+                        </div>
+                    </div>
+                    <div class="card-slip-body">
+                        <p class="card-slip__title">Рассрочка без участия банка</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slip">
+                <div class="card-slip-inner">
+                    <div class="card-slip-top">
+                        <div class="card-slip__pic">
+                            <img src="img/svg/11.svg" alt="" class="img-svg" width="90" height="70">
+                        </div>
+                    </div>
+                    <div class="card-slip-body">
+                        <p class="card-slip__title">Мебель из экологических чистых натуральных материалов</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slip">
+                <div class="card-slip-inner">
+                    <div class="card-slip-top">
+                        <div class="card-slip__pic">
+                            <img src="img/svg/12.svg" alt="" class="img-svg" width="90" height="70">
+                        </div>
+                    </div>
+                    <div class="card-slip-body">
+                        <p class="card-slip__title">Гарантия 3 года</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slip">
+                <div class="card-slip-inner">
+                    <div class="card-slip-top">
+                        <div class="card-slip__pic">
+                            <img src="img/svg/12.svg" alt="" class="img-svg" width="90" height="70">
+                        </div>
+                    </div>
+                    <div class="card-slip-body">
+                        <p class="card-slip__title">Гарантия 3 года</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="page-section">
+    <div class="container">
+        <h2 class="h2 h2--lined">Часто задаваемые вопросы</h2>
+        <div class="list-quadro js-fade-in">
+            <div class="card-question">
+                <div class="card-question-top">
+                    <div class="card-question__num">01</div>
+                </div>
+                <div class="card-question-header">
+                    <div class="card-question__title">Вы изготовляете кровать по нашим эскизам?</div>
+                </div>
+                <div class="card-question-body">
+                    <div class="card-question__text">
+                        Да, вы можете прислать нам на почту фото/эскиз,
+                        наш менеджер проконсультирует вас по стоимости
+                    </div>
+                </div>
+            </div>
+            <div class="card-question">
+                <div class="card-question-top">
+                    <div class="card-question__num">02</div>
+                </div>
+                <div class="card-question-header">
+                    <div class="card-question__title">Из чего выполнен каркас кровати?</div>
+                </div>
+                <div class="card-question-body">
+                    <div class="card-question__text">
+                        Каркас изголовья выполнен из березовой фанеры ФК, царги (боковины) из ЛМДФ
+                    </div>
+                </div>
+            </div>
+            <div class="card-question">
+                <div class="card-question-top">
+                    <div class="card-question__num">03</div>
+                </div>
+                <div class="card-question-header">
+                    <div class="card-question__title">Можно ли приобрести у Вас матрас?</div>
+                </div>
+                <div class="card-question-body">
+                    <div class="card-question__text">
+                        Да, мы предлагаем ортопедические матрасы от разных фабрик России,
+                        доставка матраса будет осуществлена вместе с кроватью
+                    </div>
+                </div>
+            </div>
+            <div class="card-question">
+                <div class="card-question-top">
+                    <div class="card-question__num">04</div>
+                </div>
+                <div class="card-question-header">
+                    <div class="card-question__title">Возможно ли оформить рассрочку?</div>
+                </div>
+                <div class="card-question-body">
+                    <div class="card-question__text">
+                        У нас вы можете оформить рассрочку до 5 месяцев, без участия банка
+                    </div>
+                </div>
+            </div>
+            <div class="card-question">
+                <div class="card-question-top">
+                    <div class="card-question__num">05</div>
+                </div>
+                <div class="card-question-header">
+                    <div class="card-question__title">Возможно изготовление кровати нестандартного размера?</div>
+                </div>
+                <div class="card-question-body">
+                    <div class="card-question__text">
+                        Мы можем изготовить мебель любого размера
+                    </div>
+                </div>
+            </div>
+            <div class="card-question">
+                <div class="card-question-top">
+                    <div class="card-question__num">06</div>
+                </div>
+                <div class="card-question-header">
+                    <div class="card-question__title">Сколько стоит сборка кровати и подъем?</div>
+                </div>
+                <div class="card-question-body">
+                    <div class="card-question__text">
+                        Сборка кровати 500 руб., с подъемным механизмом 1000 руб. Подъем без лифта 100 руб./этаж
+                        (первый этаж – 100 руб., второй этаж – 200 руб. и т.д.), матрас + 50руб./этаж. На лифте 200 руб.
+                    </div>
+                </div>
+            </div>
+            <div class="card-question">
+                <div class="card-question-top">
+                    <div class="card-question__num">07</div>
+                </div>
+                <div class="card-question-header">
+                    <div class="card-question__title">Сроки изготовления?</div>
+                </div>
+                <div class="card-question-body">
+                    <div class="card-question__text">
+                        Срок выполнения заказа до 20 рабочих дней
+                    </div>
+                </div>
+            </div>
+            <div class="card-question">
+                <div class="card-question-top">
+                    <div class="card-question__num">08</div>
+                </div>
+                <div class="card-question-header">
+                    <div class="card-question__title">Осуществляете доставку в другие города?</div>
+                </div>
+                <div class="card-question-body">
+                    <div class="card-question__text">
+                        Доставку по РФ осуществляем транспортной компанией, услуги по перевозке оплачивает получатель
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="page-section page-section--review">
+    <div class="container">
+        <h2 class="h2 h2--lined">Отзывы наших клиентов</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper-container swiper-reviews js-swiper js-fade-in">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="review-item">
+                        <div class="review-item-top">
+                            <img src="img/reviews/avatar.png" alt="" class="review-item__avatar">
+                            <div class="review-item__author">Мария Шарапова</div>
+                            <div class="review-item__text">г. Краснодар</div>
+                        </div>
+                        <div class="review-item-bottom">
+                            <img src="img/reviews/doc1.jpg" alt="" class="review-item__img">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review-item">
+                        <div class="review-item-top">
+                            <img src="img/reviews/avatar.png" alt="" class="review-item__avatar">
+                            <div class="review-item__author">Анастасия Мыскина</div>
+                            <div class="review-item__text">г. Краснодар</div>
+                        </div>
+                        <div class="review-item-bottom">
+                            <img src="img/reviews/doc2.jpg" alt="" class="review-item__img">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review-item">
+                        <div class="review-item-top">
+                            <img src="img/reviews/avatar.png" alt="" class="review-item__avatar">
+                            <div class="review-item__author">Петра Квитова</div>
+                            <div class="review-item__text">г. Краснодар</div>
+                        </div>
+                        <div class="review-item-bottom">
+                            <img src="img/reviews/doc3.jpg" alt="" class="review-item__img">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review-item">
+                        <div class="review-item-top">
+                            <img src="img/reviews/avatar.png" alt="" class="review-item__avatar">
+                            <div class="review-item__author">Мария Шарапова</div>
+                            <div class="review-item__text">г. Краснодар</div>
+                        </div>
+                        <div class="review-item-bottom">
+                            <img src="img/reviews/doc1.jpg" alt="" class="review-item__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</section>
+
+        <section class="page-section page-section--media">
+    <div class="container">
+        <h2 class="h2">Видео по сборке</h2>
+
+        <div class="video-wrap js-fade-in">
+            <div class="video-preview js-video-preview" style="background-image: url('img/video-bg.jpg')">
+                <div class="video__btn js-video-btn" data-video="mebel-video"></div>
+            </div>
+            <video id="mebel-video" class="video-native" width="320" height="176" controls>
+                <source src="content/mebel-video.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <div class="video__title">
+            Ошибки в работах: ожидание и реальность
+        </div>
+
+
+        <div class="media-gallery js-fade-in">
+            <a href="img/gallery/1.jpg" class="media-gallery__item">
+                <span class="media-gallery__photo" style="background-image: url('img/gallery/1.jpg')"></span>
+            </a>
+            <a href="img/gallery/2.jpg" class="media-gallery__item">
+                <span class="media-gallery__photo" style="background-image: url('img/gallery/2.jpg')"></span>
+            </a>
+            <a href="img/gallery/3.jpg" class="media-gallery__item">
+                <span class="media-gallery__photo" style="background-image: url('img/gallery/3.jpg')"></span>
+            </a>
+            <a href="img/gallery/4.jpg" class="media-gallery__item">
+                <span class="media-gallery__photo" style="background-image: url('img/gallery/4.jpg')"></span>
+            </a>
+            <a href="img/gallery/5.jpg" class="media-gallery__item">
+                <span class="media-gallery__photo" style="background-image: url('img/gallery/5.jpg')"></span>
+            </a>
+            <a href="img/gallery/6.jpg" class="media-gallery__item">
+                <span class="media-gallery__photo" style="background-image: url('img/gallery/6.jpg')"></span>
+            </a>
+            <a href="img/gallery/7.jpg" class="media-gallery__item">
+                <span class="media-gallery__photo" style="background-image: url('img/gallery/7.jpg')"></span>
+            </a>
+            <a href="img/gallery/8.jpg" class="media-gallery__item">
+                <span class="media-gallery__photo" style="background-image: url('img/gallery/8.jpg')"></span>
+            </a>
+            <a href="img/gallery/9.jpg" class="media-gallery__item">
+                <span class="media-gallery__photo" style="background-image: url('img/gallery/9.jpg')"></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+        <section class="page-section page-section--order">
+    <div class="container">
+        <h2 class="h2 h2--lined">Как оформить заказ</h2>
+
+        <ul class="steps-list js-fade-in">
+            <li>
+                <div class="step-item">
+                    <div class="step-item-top">
+                        <div class="step-item__num">01</div>
+                        <img src="img/svg/5.svg" alt="" class="step-item__svg" width="75" height="75">
+                    </div>
+                    <div class="step-item__descr">Вы выбираете себе кровать</div>
+                </div>
+            </li>
+            <li>
+                <div class="step-item">
+                    <div class="step-item-top">
+                        <div class="step-item__num">02</div>
+                        <img src="img/svg/4.svg" alt="" class="step-item__svg" width="75" height="75">
+                    </div>
+                    <div class="step-item__descr">Заказываете у нас на сайте</div>
+                </div>
+            </li>
+            <li>
+                <div class="step-item">
+                    <div class="step-item-top">
+                        <div class="step-item__num">03</div>
+                        <img src="img/svg/3.svg" alt="" class="step-item__svg" width="75" height="75">
+                    </div>
+                    <div class="step-item__descr">Мы связываемся с&nbsp;вами</div>
+                </div>
+            </li>
+            <li>
+                <div class="step-item">
+                    <div class="step-item-top">
+                        <div class="step-item__num">04</div>
+                        <img src="img/svg/2.svg" alt="" class="step-item__svg" width="75" height="75">
+                    </div>
+                    <div class="step-item__descr">Оплачиваете заказ</div>
+                </div>
+            </li>
+            <li>
+                <div class="step-item">
+                    <div class="step-item-top">
+                        <div class="step-item__num">05</div>
+                        <img src="img/svg/1.svg" alt="" class="step-item__svg" width="75" height="75">
+                    </div>
+                    <div class="step-item__descr">Мы доставляем ее вам!</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+        <section class="page-section page-section--map">
+    <div class="container-fluid">
+        <div class="contact-wrap">
+            <div class="contact-inner">
+                <div class="contact__title">Контакты</div>
+            </div>
+        </div>
+        <div id="map-container"></div>
+
+    </div>
+</section>
+
+        <footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+
+            <div class="footer-left">
+                <div class="footer-left-item">
+                    <a href="/" class="link-logo">
+                        <img src="img/logo.jpg" alt="" class="img-logo">
+                    </a>
+                    <div class="footer__logo-descr">Фабрика мягкой мебели</div>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-right-item">
+                    <a href="tel:88352600104" class="footer__link-phone">
+                        <span class="sp-round">
+                            <img src="img/svg/phone.svg" alt="" class="img-phone">
+                        </span>
+                        8 (8352) 600-104
+                    </a>
+                </div>
+                <div class="footer-right-item">
+                    <a href="#" class="link-btn">заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        <form id="popup-form" class="popup-form mfp-hide js-form-validate">
+    <h2 class="popup__title h2 h2--lined">Заказ обратного звонка</h2>
+
+    <div class="form-group">
+        <input type="text" id="name" placeholder="Ваше имя" class="form-control" name="name">
+    </div>
+    <div class="form-group">
+        <input type="text" id="phone" placeholder="Ваш телефон" class="form-control js-phone" name="phone">
+    </div>
+    <div class="form-group form-group--center">
+        <button type="submit" class="link-btn link-btn--lg">Заказать</button>
+    </div>
+</form>
+
+        <div id="popup-success" class="popup-success bg-white mfp-hide">
+    <h2 class="popup__title h2">Ваша заявка принята</h2>
+    <p class="p-text">
+        В ближайшее время мы к вам перезвоним.
+    </p>
+
+    <img src="img/woman.png" alt="" class="img-responsive">
+</div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/CSSPlugin.min.js"></script>
+
+
+    <script src="js/libs.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
