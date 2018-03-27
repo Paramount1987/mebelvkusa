@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "webpack": "webpack webpack.config.js",
+    "webpack": "webpack webpack.config.js --watch",
     "start": "npm run serve",
     "build": "gulp build --colors",
     "build:prod": "set NODE_ENV=production && gulp build --colors",
