@@ -1,15 +1,1 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-	 viewBox="0 0 77 73" enable-background="new 0 0 77 73" xml:space="preserve">
-	<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="24" y1="29" x2="14.6" y2="6.7"/>
-	<path fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M23.4,55.4c29,24.6,43.9,13.6,47.6,8c3.7-5.6,0.7-10.8,0.7-10.8l-18.5-5l-7,7.8C37.4,52.6,31,46.9,31,46.9s-6.4-5.7-10.3-14.2
-		l7-7.8L20.6,7.1c0,0-5.5-2.4-10.7,2S-4.4,29.4,23.4,55.4"/>
-	<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="72.8" y1="58.6" x2="49.6" y2="51.8"/>
-	<path fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M23.7,44.8c3,3.5,7.7,7.8,14.7,12.4"/>
-	<path fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M18.3,36.9c0,0,0.6,1.7,2.6,4.5"/>
-	<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="27.3" y1="6.7" x2="32.4" y2="1"/>
-	<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="32.8" y1="19.2" x2="40.2" y2="19.4"/>
-	<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="31.7" y1="11.8" x2="40.9" y2="8.6"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77 73"><path fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M24 29L14.6 6.7m8.8 48.7C52.4 80 67.3 69 71 63.4c3.7-5.6.7-10.8.7-10.8l-18.5-5-7 7.8C37.4 52.6 31 46.9 31 46.9s-6.4-5.7-10.3-14.2l7-7.8-7.1-17.8s-5.5-2.4-10.7 2-14.3 20.3 13.5 46.3m49.4 3.2l-23.2-6.8m-25.9-7c3 3.5 7.7 7.8 14.7 12.4M18.3 36.9s.6 1.7 2.6 4.5m6.4-34.7L32.4 1m.4 18.2l7.4.2m-8.5-7.6l9.2-3.2"/></svg>
