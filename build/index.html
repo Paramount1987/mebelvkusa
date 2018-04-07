@@ -323,7 +323,7 @@
                 </div>
 
                 <div class="mbl-group-btn">
-                    <div class="mbl-btn">
+                    <div class="mbl-btn js-select-validate">
                         <select class="js-select" name="" data-plh="Выбор обивки" data-type="priceFirst">
                             <option></option>
                             <option value="0">1 категория</option>
@@ -331,16 +331,18 @@
                             <option value="2000">3 категория</option>
                             <option value="3000">4 категория</option>
                         </select>
+                        <p class="select-descr">Выберите обивку</p>
                     </div>
-                    <div class="mbl-btn w-2">
+                    <div class="mbl-btn w-2 js-select-validate">
                         <select class="js-select" name="" data-plh="Подъемный механизм" data-type="priceSecond">
                             <option></option>
                             <option value="0">Без механизма</option>
                             <option value="7000">С механизмом</option>
                         </select>
+                        <p class="select-descr">Выберите подъемный механизм</p>
                     </div>
                     <div>
-                        <div class="mbl-btn w-2 b-red">
+                        <div class="mbl-btn w-2 js-select-validate">
                             <select class="js-select" name="" data-plh="Размер спального места" data-type="priceThird">
                                 <option></option>
                                 <option value="0">140 на 200</option>
@@ -358,7 +360,7 @@
                         <span class="js-price"></span>
                         <span>&nbsp;₽</span>
                     </div>
-                    <a href="#popup-form" class="link-btn link-btn--md popup-link">Купить</a>
+                    <a href="#popup-form-bed" class="link-btn link-btn--md js-form-link">Купить</a>
                 </div>
             </div>
         </div>
@@ -853,6 +855,20 @@
     </div>
     <div class="form-group">
         <input type="text" id="phone" placeholder="Ваш телефон" class="form-control js-phone" name="phone">
+    </div>
+    <div class="form-group form-group--center">
+        <button type="submit" class="link-btn link-btn--lg">Заказать</button>
+    </div>
+</form>
+
+
+<form id="popup-form-bed" class="popup-form mfp-hide js-form-validate">
+    <h2 class="popup__title h2 h2--lined">Заказать кровать</h2>
+    <div class="form-group">
+        <input type="text" id="name-bed" placeholder="Ваше имя" class="form-control" name="name">
+    </div>
+    <div class="form-group">
+        <input type="text" id="phone-bed" placeholder="Ваш телефон" class="form-control js-phone" name="phone">
     </div>
     <div class="form-group form-group--center">
         <button type="submit" class="link-btn link-btn--lg">Заказать</button>
